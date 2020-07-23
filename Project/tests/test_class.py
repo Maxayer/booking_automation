@@ -8,38 +8,40 @@ from allure_commons.types import AttachmentType
 from Project.common.factories.driver_factory import DriverFactory
 from Project.pages.HomePage import HomePage
 from Project.pages.HotelsPage import HotelsPage
+import pytest
 
 
 class TestClass:
-    def setup(self):
-        self.driver_factory = DriverFactory("google")
-        self.driver = self.driver_factory.get_driver()
-        self.home_page = HomePage(self.driver)
+    #def setup(self):
+        #self.driver_factory = DriverFactory("google")
+        #self.driver = self.driver_factory.get_driver()
 
-    def teardown(self):
-        time.sleep(10)
-        self.driver.quit()
+    #def teardown(self):
+        #time.sleep(10)
+        #self.driver.quit()
 
     @allure.feature("booking.com tests")
     @allure.story("Check the number of children")
     @allure.severity("critical")
-    def test_first(self):
+    @pytest.mark.parametrize("number_of_children", [2, 3, 4, 5])
+    def test_first(self, driver, number_of_children):
+        self.home_page = HomePage(driver)
         self.home_page.open_page()
         self.home_page.click_guests_dpd()
 
-        self.number_of_children = 3
-        self.home_page.increase_children_number(self.number_of_children)
+        self.home_page.increase_children_number(number_of_children)
         self.home_page.take_screenshot()
-        assert self.home_page.get_number_of_children() == self.number_of_children, "Oops, you've missed someone"
+        assert self.home_page.get_number_of_children() == number_of_children, "Oops, you've missed someone"
 
     @allure.feature("booking.com tests")
     @allure.story("Check the hotels prices")
     @allure.severity("critical")
-    def test_second(self):
+    def test_second(self, driver):
+        self.home_page = HomePage(driver)
         self.home_page.open_page()
         self.home_page.click_first_hotel_bunner()
 
-        self.hotels_page = HotelsPage(self.driver)
+        self.hotels_page = HotelsPage(driver)
 
         self.number_of_hotels_on_page = len(self.hotels_page.get_hotels_on_page())
         assert self.number_of_hotels_on_page > 0, "There is no hotel on the page"
