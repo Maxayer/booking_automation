@@ -4,8 +4,9 @@ from Project.common.factories.driver_factory import DriverFactory
 
 
 def pytest_addoption(parser):
-    parser.addoption('--browser_name', action='store', default="opera",
+    parser.addoption('--browser_name', action='store', default="chrome",
                      help="Choose browser: chrome, opera or firefox")
+
 
 @pytest.fixture(scope="function")
 def driver(request):
