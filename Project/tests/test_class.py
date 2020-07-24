@@ -1,11 +1,4 @@
 import allure
-import time
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
-from allure_commons.types import AttachmentType
-from Project.common.factories.driver_factory import DriverFactory
 from Project.pages.HomePage import HomePage
 from Project.pages.HotelsPage import HotelsPage
 import pytest

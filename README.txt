@@ -1,6 +1,6 @@
 the project allows to commit tests on three browsers: chrome, firefox and opera
 
-launch the tests from root directory, for exemple:
+launch the tests from the root directory, for example:
 
 pytest -v -s Project/tests/test_class.py
 
