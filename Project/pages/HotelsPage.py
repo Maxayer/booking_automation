@@ -32,7 +32,8 @@ class HotelsPage(BasePage):
         return self.find_all_web_elements(self.show_price_button)
 
     def click_on_hotel_by_index(self, index):
-        self.find_all_web_elements(self.show_price_button)[index].find_element(By.XPATH, ".").click()
+        web_element = self.find_all_web_elements(self.show_price_button)[index].find_element(By.XPATH, ".")
+        self.click(web_element)
 
     def click_on_next_month_day(self):
         self.wait_to_be_clickable(self.fifteen_day_of_next_month_calendar_table)

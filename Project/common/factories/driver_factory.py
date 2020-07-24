@@ -11,16 +11,18 @@ class DriverFactory:
     def get_driver(self):
         if self.driver_name.lower() == "chrome":
             self.exec_path = Config.ROOT_DIR + "/resources/drivers/chromedriver.exe"
-            driver = webdriver.Chrome(self.exec_path)
-            driver.implicitly_wait(5)
-            return driver
+            self.driver = webdriver.Chrome(executable_path=self.exec_path)
 
         # is to be done
         if self.driver_name.lower() == "firefox":
             self.exec_path = Config.ROOT_DIR + "/resources/drivers/geckodriver.exe"
-            driver = webdriver.Firefox(self.exec_path)
-            driver.implicitly_wait(5)
-            return driver
+            self.driver = webdriver.Firefox(executable_path=self.exec_path)
 
+        if self.driver_name.lower() == "opera":
+            self.exec_path = Config.ROOT_DIR + "/resources/drivers/operadriver.exe"
+            self.driver = webdriver.Opera(executable_path=self.exec_path)
+
+        self.driver.implicitly_wait(5)
+        return self.driver
 
 

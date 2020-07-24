@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as cond
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.common.exceptions import TimeoutException
+from Project.common.PageElement import PageElement
 
 
 class BasePage():
@@ -28,7 +29,10 @@ class BasePage():
         self.wait.until(cond.presence_of_element_located((page_element.get_locator_type(), page_element.get_locator())))
 
     def click(self, page_element):
-        self.find_web_element(page_element).click()
+        if isinstance(page_element, PageElement):
+            page_element = self.find_web_element(page_element)
+
+        page_element.click()
 
     def enter_text(self, page_element, text):
         self.find_web_element(page_element).send_keys(text)
