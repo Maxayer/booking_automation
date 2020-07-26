@@ -22,6 +22,7 @@ class HomePage(BasePage):
 
     first_hotel_bunner = PageElement("The first hotel bunner on the home page",
                          By.CSS_SELECTOR, "div[data-no-follow-link='1']", False)
+    title_prefix = "Booking.com | Официальный сайт|"
 
     def open_page(self):
         self.driver.maximize_window()
@@ -49,4 +50,4 @@ class HomePage(BasePage):
         self.click(self.first_hotel_bunner)
 
     def is_at_page(self):
-        return self.driver.title.startswith("Booking.com | Официальный сайт|")
+        return self.driver.title.startswith(self.title_prefix)

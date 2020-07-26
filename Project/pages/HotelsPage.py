@@ -23,6 +23,7 @@ class HotelsPage(BasePage):
     hotels_with_price = PageElement("Hotels with the displayed price", By.XPATH,
                         "//div[@class='bui-price-display__value prco-text-nowrap-helper prco-inline-block-maker-helper']",
                         False)
+    title_prefix = "Booking.com: Отели по направлению"
 
     def get_hotels_on_page(self):
         self.wait_to_be_present(self.hotels_on_page)
@@ -49,5 +50,4 @@ class HotelsPage(BasePage):
         return self.find_all_web_elements(self.hotels_with_price)
 
     def is_at_page(self):
-        time.sleep(2)
-        return self.driver.title.startswith("Booking.com: Отели по направлению")
+        return self.driver.title.startswith(self.title_prefix)

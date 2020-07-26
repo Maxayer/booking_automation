@@ -6,7 +6,6 @@ import pytest
 
 class TestClass:
 
-
     @allure.feature("booking.com tests")
     @allure.story("Check the number of children")
     @allure.severity("critical")

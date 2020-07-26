@@ -28,6 +28,10 @@ class BasePage():
     def wait_to_be_present(self, page_element):
         self.wait.until(cond.presence_of_element_located((page_element.get_locator_type(), page_element.get_locator())))
 
+    def wait_title_to_be_present(self, title_prefix):
+        self.wait.until(self.is_title_correct(title_prefix))
+        self.wait.until()
+
     def click(self, page_element):
         if isinstance(page_element, PageElement):
             page_element = self.find_web_element(page_element)
@@ -42,6 +46,9 @@ class BasePage():
 
     def get_attribute(self, page_element, attribute_name):
         return self.find_web_element(page_element).get_attribute(attribute_name)
+
+    def is_title_correct(self, title_prefix):
+        return self.driver.title.startswith(title_prefix)
 
     def take_screenshot(self):
         with allure.step("Take a screen"):
