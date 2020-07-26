@@ -16,6 +16,7 @@ class TestClass:
     @allure.feature("booking.com tests")
     @allure.story("Check the number of children")
     @allure.severity("critical")
+    @pytest.mark.skip()
     @pytest.mark.parametrize("number_of_children", [2, 3, 4, 5])
     def test_first(self, driver, number_of_children):
         self.home_page = HomePage(driver)
@@ -35,7 +36,7 @@ class TestClass:
         self.home_page.click_first_hotel_bunner()
 
         self.hotels_page = HotelsPage(driver)
-
+        assert self.hotels_page.is_at_page()
         self.number_of_hotels_on_page = len(self.hotels_page.get_hotels_on_page())
         assert self.number_of_hotels_on_page > 0, "There is no hotel on the page"
         assert len(self.hotels_page.get_show_price_buttons()) >= self.number_of_hotels_on_page, "Show price button doesn't seen on every hotel"

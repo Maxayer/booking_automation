@@ -45,8 +45,8 @@ class BasePage():
 
     def take_screenshot(self):
         with allure.step("Take a screen"):
-            allure.attach(self.driver.get_screenshot_as_png(), name='screenshot', attachment_type= AttachmentType.PNG)
+            allure.attach(self.driver.get_screenshot_as_png(), name='screenshot', attachment_type=AttachmentType.PNG)
 
-    def at_page(self, title):
-        pass
+    def is_at_page(self, title):
+        raise NotEmplementedError("You should define is_at_page() method in all your pages")
 

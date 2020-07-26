@@ -47,3 +47,6 @@ class HomePage(BasePage):
     def click_first_hotel_bunner(self):
         self.wait_to_be_clickable(self.first_hotel_bunner)
         self.click(self.first_hotel_bunner)
+
+    def is_at_page(self):
+        return self.driver.title.startswith("Booking.com | Официальный сайт|")

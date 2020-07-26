@@ -46,3 +46,6 @@ class HotelsPage(BasePage):
     def get_hotels_with_price(self):
         self.wait_to_be_present(self.hotels_with_price)
         return self.find_all_web_elements(self.hotels_with_price)
+
+    def is_at_page(self):
+        return self.driver.title.startswith("Booking.com: Отели по направлению")
