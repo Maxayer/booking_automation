@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import Select
 from Project.common.PageElement import PageElement
 from Project.pages.BasePage import BasePage
 from Project.common.helper import Helper
+import time
 
 
 class HotelsPage(BasePage):
@@ -48,4 +49,5 @@ class HotelsPage(BasePage):
         return self.find_all_web_elements(self.hotels_with_price)
 
     def is_at_page(self):
+        time.sleep(2)
         return self.driver.title.startswith("Booking.com: Отели по направлению")
