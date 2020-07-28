@@ -1,0 +1,182 @@
+{
+  "uid" : "d94ea5063be6e342",
+  "name" : "test_second",
+  "fullName" : "Project.tests.test_class.TestClass#test_second",
+  "historyId" : "af657429174ae7efb39650cb4dccaa76",
+  "time" : {
+    "start" : 1595920036352,
+    "stop" : 1595920042964,
+    "duration" : 6612
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>>()\n +    where <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>> = <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>.is_at_page\n +      where <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0> = <Project.tests.test_class.TestClass object at 0x000001D340A41F10>.hotels_page",
+  "statusTrace" : "self = <Project.tests.test_class.TestClass object at 0x000001D340A41F10>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"00d9086c1a2a2bfe6ac6bf54323b25c2\")>\n\n    @allure.feature(\"booking.com tests\")\n    @allure.story(\"Check the hotels prices\")\n    @allure.severity(\"critical\")\n    def test_second(self, driver):\n        try:\n            self.home_page = HomePage(driver)\n            self.home_page.open_page()\n            self.home_page.click_first_hotel_bunner()\n    \n            self.hotels_page = HotelsPage(driver)\n>           assert self.hotels_page.is_at_page()\nE           assert False\nE            +  where False = <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>>()\nE            +    where <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>> = <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>.is_at_page\nE            +      where <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0> = <Project.tests.test_class.TestClass object at 0x000001D340A41F10>.hotels_page\n\nProject\\tests\\test_class.py:32: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1595920033283,
+      "stop" : 1595920036351,
+      "duration" : 3068
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n +  where False = <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>>()\n +    where <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>> = <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>.is_at_page\n +      where <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0> = <Project.tests.test_class.TestClass object at 0x000001D340A41F10>.hotels_page",
+    "statusTrace" : "self = <Project.tests.test_class.TestClass object at 0x000001D340A41F10>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"00d9086c1a2a2bfe6ac6bf54323b25c2\")>\n\n    @allure.feature(\"booking.com tests\")\n    @allure.story(\"Check the hotels prices\")\n    @allure.severity(\"critical\")\n    def test_second(self, driver):\n        try:\n            self.home_page = HomePage(driver)\n            self.home_page.open_page()\n            self.home_page.click_first_hotel_bunner()\n    \n            self.hotels_page = HotelsPage(driver)\n>           assert self.hotels_page.is_at_page()\nE           assert False\nE            +  where False = <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>>()\nE            +    where <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>> = <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>.is_at_page\nE            +      where <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0> = <Project.tests.test_class.TestClass object at 0x000001D340A41F10>.hotels_page\n\nProject\\tests\\test_class.py:32: AssertionError",
+    "steps" : [ {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1595920041794,
+        "stop" : 1595920042963,
+        "duration" : 1169
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f6155140685039d4",
+        "name" : "screenshot",
+        "source" : "f6155140685039d4.png",
+        "type" : "image/png",
+        "size" : 189283
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1595920043046,
+      "stop" : 1595920045106,
+      "duration" : 2060
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Check the hotels prices"
+  }, {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "4456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "a84c8c861fb43adf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-sb-id=\"main\" type=\"submit\" class=\"sb-searchbox__button \">...</button> is not clickable at point (124, 524). Other element would receive the click: <form id=\"filterbox_wrap\" class=\"barrel_o_filters js-barrel_o_filters sr_filters__container\" role=\"region\" aria-label=\"Применить фильтры к результатам поиска\">...</form>\n  (Session info: chrome=84.0.4147.89)",
+      "time" : {
+        "start" : 1595863633917,
+        "stop" : 1595863643443,
+        "duration" : 9526
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "a6b0d810d1e6ec21",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/5/allure/#testresult/a6b0d810d1e6ec21",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-sb-id=\"main\" type=\"submit\" class=\"sb-searchbox__button \">...</button> is not clickable at point (124, 524). Other element would receive the click: <form id=\"filterbox_wrap\" class=\"barrel_o_filters js-barrel_o_filters sr_filters__container\" role=\"region\" aria-label=\"Применить фильтры к результатам поиска\">...</form>\n  (Session info: chrome=84.0.4147.89)",
+        "time" : {
+          "start" : 1595863633917,
+          "stop" : 1595863643443,
+          "duration" : 9526
+        }
+      }, {
+        "uid" : "5f801c075c489624",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/4/allure/#testresult/5f801c075c489624",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595860630286,
+          "stop" : 1595860641623,
+          "duration" : 11337
+        }
+      }, {
+        "uid" : "636f53ee78651ebf",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/3/allure/#testresult/636f53ee78651ebf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595860630286,
+          "stop" : 1595860641623,
+          "duration" : 11337
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d94ea5063be6e342.json",
+  "parameterValues" : [ ]
+}

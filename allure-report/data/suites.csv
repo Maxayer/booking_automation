@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jul 28 10:06:43 EEST 2020","Tue Jul 28 10:06:49 EEST 2020","6139","Project.tests","test_class","TestClass","","","test_first[3]",""
+"failed","Tue Jul 28 10:07:16 EEST 2020","Tue Jul 28 10:07:22 EEST 2020","6612","Project.tests","test_class","TestClass","","","test_second",""
+"passed","Tue Jul 28 10:06:54 EEST 2020","Tue Jul 28 10:07:00 EEST 2020","5394","Project.tests","test_class","TestClass","","","test_first[4]",""
+"passed","Tue Jul 28 10:06:31 EEST 2020","Tue Jul 28 10:06:38 EEST 2020","6318","Project.tests","test_class","TestClass","","","test_first[2]",""
+"passed","Tue Jul 28 10:07:05 EEST 2020","Tue Jul 28 10:07:11 EEST 2020","5922","Project.tests","test_class","TestClass","","","test_first[5]",""

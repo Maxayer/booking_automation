@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert False\n +  where False = <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>>()\n +    where <bound method HotelsPage.is_at_page of <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>> = <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0>.is_at_page\n +      where <Project.pages.HotelsPage.HotelsPage object at 0x000001D340A33AC0> = <Project.tests.test_class.TestClass object at 0x000001D340A41F10>.hotels_page",
+      "children" : [ {
+        "name" : "test_second",
+        "uid" : "d94ea5063be6e342",
+        "parentUid" : "82102c603e95c9fd0fb46775192b1905",
+        "status" : "failed",
+        "time" : {
+          "start" : 1595920036352,
+          "stop" : 1595920042964,
+          "duration" : 6612
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "82102c603e95c9fd0fb46775192b1905"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

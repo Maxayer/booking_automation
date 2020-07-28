@@ -1,0 +1,175 @@
+{
+  "uid" : "94ecb22851db5371",
+  "name" : "test_first[5]",
+  "fullName" : "Project.tests.test_class.TestClass#test_first",
+  "historyId" : "f123ef4a1bcd782cfaf9d9bb1bde1ce0",
+  "time" : {
+    "start" : 1595920025275,
+    "stop" : 1595920031197,
+    "duration" : 5922
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1595920022257,
+      "stop" : 1595920025275,
+      "duration" : 3018
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1595920030889,
+        "stop" : 1595920031175,
+        "duration" : 286
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7de8c883c2e379f3",
+        "name" : "screenshot",
+        "source" : "7de8c883c2e379f3.png",
+        "type" : "image/png",
+        "size" : 99257
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1595920031198,
+      "stop" : 1595920033276,
+      "duration" : 2078
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "story",
+    "value" : "Check the number of children"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "4456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "number_of_children",
+    "value" : "5"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "ebb08ac8acaac5e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595863623695,
+        "stop" : 1595863628855,
+        "duration" : 5160
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "87ff3eae54eb216b",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/5/allure/#testresult/87ff3eae54eb216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595863623695,
+          "stop" : 1595863628855,
+          "duration" : 5160
+        }
+      }, {
+        "uid" : "93f119623c8735e4",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/4/allure/#testresult/93f119623c8735e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595860619147,
+          "stop" : 1595860625189,
+          "duration" : 6042
+        }
+      }, {
+        "uid" : "7ff7411e0fce81e7",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/3/allure/#testresult/7ff7411e0fce81e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595860619147,
+          "stop" : 1595860625189,
+          "duration" : 6042
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "94ecb22851db5371.json",
+  "parameterValues" : [ "5" ]
+}

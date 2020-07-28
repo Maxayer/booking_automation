@@ -4,6 +4,7 @@ from Project.pages.HotelsPage import HotelsPage
 import pytest
 
 
+@pytest.mark.usefixtures("driver_init_2")
 class TestClass:
 
     @allure.feature("booking.com tests")

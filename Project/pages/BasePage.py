@@ -30,7 +30,6 @@ class BasePage():
 
     def wait_title_to_be_present(self, title_prefix):
         self.wait.until(self.is_title_correct(title_prefix))
-        self.wait.until()
 
     def click(self, page_element):
         if isinstance(page_element, PageElement):

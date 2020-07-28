@@ -1,0 +1,29 @@
+[ {
+  "buildOrder" : 6,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/6/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 51042
+  }
+}, {
+  "buildOrder" : 5,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/5/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 51998
+  }
+}, {
+  "buildOrder" : 4,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/4/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 55177
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/3/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 55177
+  }
+} ]
