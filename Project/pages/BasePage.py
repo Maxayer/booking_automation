@@ -1,13 +1,7 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
 import allure
 from allure_commons.types import AttachmentType
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as cond
-from selenium.common.exceptions import NoAlertPresentException
-from selenium.common.exceptions import TimeoutException
 from Project.common.PageElement import PageElement
 
 
@@ -54,5 +48,5 @@ class BasePage():
             allure.attach(self.driver.get_screenshot_as_png(), name='screenshot', attachment_type=AttachmentType.PNG)
 
     def is_at_page(self, title):
-        raise NotEmplementedError("You should define is_at_page() method in all your pages")
+        raise NotImplementedError("You should define is_at_page() method in all your pages")
 

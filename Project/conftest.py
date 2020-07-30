@@ -3,6 +3,8 @@ from selenium import webdriver
 from Project.common.factories.driver_factory import DriverFactory
 import urllib3
 import warnings
+from _pytest.runner import CallInfo
+from _pytest.terminal import TerminalReporter
 
 
 #def pytest_addoption(parser):
@@ -21,23 +23,32 @@ import warnings
 
 chromeCapabilities = {
     "browserName":"chrome",
-
 }
-
 firefoxCapabilities = {
     "browserName":"firefox"
 }
 
+
+@pytest.fixture(params=[chromeCapabilities, firefoxCapabilities])
+def capabilities(request):
+    return request.param
+
+
 @pytest.fixture(scope="function")
-def driver(request):
+def driver(request, capabilities):
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    driver = webdriver.Remote(command_executor='http://localhost:20500/wd/hub', desired_capabilities=chromeCapabilities)
+    driver = webdriver.Remote(command_executor='http://localhost:20500/wd/hub', desired_capabilities=capabilities)
+    driver.implicitly_wait(5)
     yield driver
     driver.quit()
+
 
 @pytest.fixture(scope="function")
 def driver_init_2(request):
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     driver = webdriver.Remote(command_executor='http://localhost:20500/wd/hub', desired_capabilities=firefoxCapabilities)
+    driver.implicitly_wait(5)
     yield driver
     driver.quit()
+
+

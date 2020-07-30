@@ -1,17 +1,21 @@
+import sys
+
 import allure
 from Project.pages.HomePage import HomePage
 from Project.pages.HotelsPage import HotelsPage
 import pytest
 
 
-@pytest.mark.usefixtures("driver_init_2")
 class TestClass:
 
     @allure.feature("booking.com tests")
     @allure.story("Check the number of children")
     @allure.severity("critical")
     @pytest.mark.parametrize("number_of_children", [2, 3, 4, 5])
-    def test_first(self, driver, number_of_children):
+    def test_first(self, driver, number_of_children, capsys):
+        browser_name = driver.capabilities['browserName']
+        sys.stderr.write(f"The test is running by {browser_name} ")
+
         self.home_page = HomePage(driver)
         self.home_page.open_page()
         self.home_page.click_guests_dpd()
@@ -38,7 +42,7 @@ class TestClass:
             self.number_of_hotels_on_page = len(self.hotels_page.get_hotels_on_page())
             assert self.number_of_hotels_on_page > 0, "There is no hotel on the page"
             assert len(
-                self.hotels_page.get_show_price_buttons()) >= self.number_of_hotels_on_page, "Show price button doesn't seen on every hotel"
+                self.hotels_page.get_show_price_buttons()) >= self.number_of_hotels_on_page, "The show price button isn't seen on every hotel"
 
             self.hotels_page.click_on_hotel_by_index(0)
             self.hotels_page.click_on_next_month_day()
