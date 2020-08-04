@@ -5,4 +5,4 @@ cache: pip
 install:
   - pip install -r requirements.txt
 script:
-  - python Project/tests/test_class.py
+  - python test_class.py
