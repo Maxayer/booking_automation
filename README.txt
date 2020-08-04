@@ -1,4 +1,5 @@
-https://travis-ci.org/Maxayer/booking_automation.svg?branch=master
+.. image:: https://travis-ci.org/github/Maxayer/booking_automation.png
+  :target: https://travis-ci.org/github/Maxayer/booking_automation
 
 the project allows to commit tests on three browsers: chrome, firefox and opera
 
