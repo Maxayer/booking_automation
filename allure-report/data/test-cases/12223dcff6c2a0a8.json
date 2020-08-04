@@ -1,0 +1,175 @@
+{
+  "uid" : "12223dcff6c2a0a8",
+  "name" : "test_first[capabilities1-5]",
+  "fullName" : "Project.tests.test_class.TestClass#test_first",
+  "historyId" : "f32ebc8fff37e32fd33848ddbd968f21",
+  "time" : {
+    "start" : 1596202214646,
+    "stop" : 1596202233494,
+    "duration" : 18848
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1596202200598,
+      "stop" : 1596202214567,
+      "duration" : 13969
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capabilities",
+    "time" : {
+      "start" : 1596202200598,
+      "stop" : 1596202200598,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capsys",
+    "time" : {
+      "start" : 1596202214568,
+      "stop" : 1596202214569,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1596202233083,
+        "stop" : 1596202233431,
+        "duration" : 348
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "88274d7cbe0c14ef",
+        "name" : "screenshot",
+        "source" : "88274d7cbe0c14ef.png",
+        "type" : "image/png",
+        "size" : 608579
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1596202233496,
+      "stop" : 1596202244231,
+      "duration" : 10735
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capsys::0",
+    "time" : {
+      "start" : 1596202233495,
+      "stop" : 1596202233495,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "story",
+    "value" : "Check the number of children"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "13036-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "capabilities",
+    "value" : "{'browserName': 'firefox'}"
+  }, {
+    "name" : "number_of_children",
+    "value" : "5"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "12223dcff6c2a0a8.json",
+  "parameterValues" : [ "{'browserName': 'firefox'}", "5" ]
+}

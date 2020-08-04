@@ -1,0 +1,146 @@
+{
+  "uid" : "1958c4acaf49f1ae",
+  "name" : "test_first[capabilities0-4]",
+  "fullName" : "Project.tests.test_class.TestClass#test_first",
+  "historyId" : "ba3ea0f57446475992845ef200d18b08",
+  "time" : {
+    "start" : 1596456517374,
+    "stop" : 1596456544974,
+    "duration" : 27600
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <Project.tests.test_class.TestClass object at 0x000002176F3EF7C0>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"2c491bebc5f2908dc98b9dcbc20f665b\")>\nnumber_of_children = 4\ncapsys = <_pytest.capture.CaptureFixture object at 0x000002176F46D400>\n\n    @allure.feature(\"booking.com tests\")\n    @allure.story(\"Check the number of children\")\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"number_of_children\", [2, 3, 4, 5])\n    def test_first(self, driver, number_of_children, capsys):\n        browser_name = driver.capabilities['browserName']\n        sys.stderr.write(f\"The test is running by {browser_name} \")\n    \n        self.home_page = HomePage(driver)\n        self.home_page.open_page()\n        self.home_page.click_guests_dpd()\n    \n>       self.home_page.increase_children_number(number_of_children)\n\nProject\\tests\\test_class.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nProject\\pages\\HomePage.py:40: in increase_children_number\n    self.wait_to_be_clickable(self.increase_children_number_btn)\nProject\\pages\\BasePage.py:20: in wait_to_be_clickable\n    self.wait.until(cond.element_to_be_clickable((page_element.get_locator_type(), page_element.get_locator())))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"2c491bebc5f2908dc98b9dcbc20f665b\")>\nmethod = <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x000002176F46DBB0>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "capabilities",
+    "time" : {
+      "start" : 1596456513120,
+      "stop" : 1596456513120,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1596456513120,
+      "stop" : 1596456517372,
+      "duration" : 4252
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capsys",
+    "time" : {
+      "start" : 1596456517372,
+      "stop" : 1596456517373,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1596456545060,
+      "stop" : 1596456545116,
+      "duration" : 56
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capsys::0",
+    "time" : {
+      "start" : 1596456545059,
+      "stop" : 1596456545059,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Check the number of children"
+  }, {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "12344-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "capabilities",
+    "value" : "{'browserName': 'chrome'}"
+  }, {
+    "name" : "number_of_children",
+    "value" : "4"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1958c4acaf49f1ae.json",
+  "parameterValues" : [ "{'browserName': 'chrome'}", "4" ]
+}

@@ -1,0 +1,163 @@
+{
+  "uid" : "99ef561be7e3c894",
+  "name" : "test_second[capabilities0]",
+  "fullName" : "Project.tests.test_class.TestClass#test_second",
+  "historyId" : "675162be877d761081a1fe224fe73fb5",
+  "time" : {
+    "start" : 1596202206399,
+    "stop" : 1596202251132,
+    "duration" : 44733
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1596202200597,
+      "stop" : 1596202206398,
+      "duration" : 5801
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capabilities",
+    "time" : {
+      "start" : 1596202200597,
+      "stop" : 1596202200597,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1596202243781,
+        "stop" : 1596202244362,
+        "duration" : 581
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e4234cc4b92c666b",
+        "name" : "screenshot",
+        "source" : "e4234cc4b92c666b.png",
+        "type" : "image/png",
+        "size" : 235188
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1596202250689,
+        "stop" : 1596202251132,
+        "duration" : 443
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "37ca93ab7e06c898",
+        "name" : "screenshot",
+        "source" : "37ca93ab7e06c898.png",
+        "type" : "image/png",
+        "size" : 343963
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1596202251133,
+      "stop" : 1596202251199,
+      "duration" : 66
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Check the hotels prices"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "16356-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "capabilities",
+    "value" : "{'browserName': 'chrome'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "99ef561be7e3c894.json",
+  "parameterValues" : [ "{'browserName': 'chrome'}" ]
+}

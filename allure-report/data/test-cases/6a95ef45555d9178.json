@@ -1,0 +1,339 @@
+{
+  "uid" : "6a95ef45555d9178",
+  "name" : "test_first[capabilities1-2]",
+  "fullName" : "Project.tests.test_class.TestClass#test_first",
+  "historyId" : "c6286b3bb55d9f96cd7d601fd7f3d52f",
+  "time" : {
+    "start" : 1596549362746,
+    "stop" : 1596549371865,
+    "duration" : 9119
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "capsys",
+    "time" : {
+      "start" : 1596549362744,
+      "stop" : 1596549362744,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capabilities",
+    "time" : {
+      "start" : 1596549337865,
+      "stop" : 1596549337865,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1596549337865,
+      "stop" : 1596549362744,
+      "duration" : 24879
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1596549370826,
+        "stop" : 1596549371376,
+        "duration" : 550
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8c27da2a7093651d",
+        "name" : "screenshot",
+        "source" : "8c27da2a7093651d.png",
+        "type" : "image/png",
+        "size" : 784813
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "capsys::0",
+    "time" : {
+      "start" : 1596549371866,
+      "stop" : 1596549371866,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1596549371867,
+      "stop" : 1596549373416,
+      "duration" : 1549
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Check the number of children"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "21808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "capabilities",
+    "value" : "{'browserName': 'firefox'}"
+  }, {
+    "name" : "number_of_children",
+    "value" : "2"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "d814e582d2f7e484",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596457550031,
+        "stop" : 1596457562802,
+        "duration" : 12771
+      }
+    }, {
+      "uid" : "c1b0785977153f7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596457466733,
+        "stop" : 1596457486817,
+        "duration" : 20084
+      }
+    }, {
+      "uid" : "74f1896920fd19b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596456811229,
+        "stop" : 1596456830190,
+        "duration" : 18961
+      }
+    }, {
+      "uid" : "182ed2445b4aba12",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: permission denied\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'M-BOVA-PC', ip: '10.7.0.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'\nDriver info: driver.version: unknown\nremote stacktrace: \nStacktrace:\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)\n    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)\n    at java.lang.reflect.Constructor.newInstance (None:-1)\n    at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0 (W3CHandshakeResponse.java:62)\n    at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0 (HandshakeResponse.java:30)\n    at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0 (ProtocolHandshake.java:126)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:128)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:74)\n    at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake (RemoteSession.java:147)\n    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:161)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:180)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:183)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Collections$2.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:69)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.DistinctOps$1$2.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)\n    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:72)\n    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:65)\n    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:235)\n    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)\n    at java.util.concurrent.FutureTask.run (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)\n    at java.lang.Thread.run (None:-1)",
+      "time" : {
+        "start" : 1596456728042,
+        "stop" : 1596456728042,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "deb605d8bc8e860e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+      "time" : {
+        "start" : 1596456668749,
+        "stop" : 1596456668749,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "76c17b227c293319",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+      "time" : {
+        "start" : 1596456513117,
+        "stop" : 1596456513117,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b9500229bd00321",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596202221471,
+        "stop" : 1596202231745,
+        "duration" : 10274
+      }
+    }, {
+      "uid" : "6622414fb633ef69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596195587661,
+        "stop" : 1596195592810,
+        "duration" : 5149
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "1b7669dfbff91c39",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/15/allure/#testresult/1b7669dfbff91c39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596457550031,
+          "stop" : 1596457562802,
+          "duration" : 12771
+        }
+      }, {
+        "uid" : "f98d09f67a29e4ed",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/14/allure/#testresult/f98d09f67a29e4ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596457466733,
+          "stop" : 1596457486817,
+          "duration" : 20084
+        }
+      }, {
+        "uid" : "d52499465b4570f",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/13/allure/#testresult/d52499465b4570f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596456811229,
+          "stop" : 1596456830190,
+          "duration" : 18961
+        }
+      }, {
+        "uid" : "cb3dc5f462ae729f",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/12/allure/#testresult/cb3dc5f462ae729f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: permission denied\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'M-BOVA-PC', ip: '10.7.0.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'\nDriver info: driver.version: unknown\nremote stacktrace: \nStacktrace:\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)\n    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)\n    at java.lang.reflect.Constructor.newInstance (None:-1)\n    at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0 (W3CHandshakeResponse.java:62)\n    at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0 (HandshakeResponse.java:30)\n    at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0 (ProtocolHandshake.java:126)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:128)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:74)\n    at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake (RemoteSession.java:147)\n    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:161)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:180)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:183)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Collections$2.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:69)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.DistinctOps$1$2.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)\n    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:72)\n    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:65)\n    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:235)\n    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)\n    at java.util.concurrent.FutureTask.run (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)\n    at java.lang.Thread.run (None:-1)",
+        "time" : {
+          "start" : 1596456728042,
+          "stop" : 1596456728042,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "e0dfe91aa04270b1",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/11/allure/#testresult/e0dfe91aa04270b1",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+        "time" : {
+          "start" : 1596456668749,
+          "stop" : 1596456668749,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "85e1f43c87f0d14b",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/10/allure/#testresult/85e1f43c87f0d14b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+        "time" : {
+          "start" : 1596456513117,
+          "stop" : 1596456513117,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "6a6172553f9a1f5a",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/9/allure/#testresult/6a6172553f9a1f5a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596202221471,
+          "stop" : 1596202231745,
+          "duration" : 10274
+        }
+      }, {
+        "uid" : "eddc7e384dfba107",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/8/allure/#testresult/eddc7e384dfba107",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596195587661,
+          "stop" : 1596195592810,
+          "duration" : 5149
+        }
+      }, {
+        "uid" : "b409d9ffc7ac86e8",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/7/allure/#testresult/b409d9ffc7ac86e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596195587661,
+          "stop" : 1596195592810,
+          "duration" : 5149
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6a95ef45555d9178.json",
+  "parameterValues" : [ "{'browserName': 'firefox'}", "2" ]
+}

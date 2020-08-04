@@ -1,0 +1,335 @@
+{
+  "uid" : "956beaef627272c2",
+  "name" : "test_second[capabilities1]",
+  "fullName" : "Project.tests.test_class.TestClass#test_second",
+  "historyId" : "e30b433d8471ec8174c6a17e957d5c74",
+  "time" : {
+    "start" : 1596549348167,
+    "stop" : 1596549383484,
+    "duration" : 35317
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <Project.tests.test_class.TestClass object at 0x0000029F36F0F550>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"7febb90d-89f1-4eb8-a6dc-fb7a2d39cc3f\")>\n\n    @allure.feature(\"booking.com tests\")\n    @allure.story(\"Check the hotels prices\")\n    @allure.severity(\"critical\")\n    def test_second(self, driver):\n        browser_name = driver.capabilities['browserName']\n        sys.stderr.write(f\"The test is running by {browser_name} \")\n    \n        try:\n            self.home_page = HomePage(driver)\n            self.home_page.open_page()\n            self.home_page.click_first_hotel_bunner()\n    \n            self.hotels_page = HotelsPage(driver)\n            assert self.hotels_page.is_at_page()\n        finally:\n            self.home_page.take_screenshot()\n    \n        try:\n            self.number_of_hotels_on_page = len(self.hotels_page.get_hotels_on_page())\n            assert self.number_of_hotels_on_page > 0, \"There is no hotel on the page\"\n            assert len(\n                self.hotels_page.get_show_price_buttons()) >= self.number_of_hotels_on_page, \"The show price button isn't seen on every hotel\"\n    \n            self.hotels_page.click_on_hotel_by_index(0)\n            self.hotels_page.click_on_next_month_day()\n            self.hotels_page.click_on_search_btn()\n>           assert len(self.hotels_page.get_hotels_on_page()) == len(\n                self.hotels_page.get_hotels_with_price()), \"Some hotels are displayed without price\"\n\nProject\\tests\\test_class.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nProject\\pages\\HotelsPage.py:29: in get_hotels_on_page\n    self.wait_to_be_present(self.hotels_on_page)\nProject\\pages\\BasePage.py:23: in wait_to_be_present\n    self.wait.until(cond.presence_of_element_located((page_element.get_locator_type(), page_element.get_locator())))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"7febb90d-89f1-4eb8-a6dc-fb7a2d39cc3f\")>\nmethod = <selenium.webdriver.support.expected_conditions.presence_of_element_located object at 0x0000029F36F9CD60>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1596549337867,
+      "stop" : 1596549348165,
+      "duration" : 10298
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capabilities",
+    "time" : {
+      "start" : 1596549337867,
+      "stop" : 1596549337867,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <Project.tests.test_class.TestClass object at 0x0000029F36F0F550>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"7febb90d-89f1-4eb8-a6dc-fb7a2d39cc3f\")>\n\n    @allure.feature(\"booking.com tests\")\n    @allure.story(\"Check the hotels prices\")\n    @allure.severity(\"critical\")\n    def test_second(self, driver):\n        browser_name = driver.capabilities['browserName']\n        sys.stderr.write(f\"The test is running by {browser_name} \")\n    \n        try:\n            self.home_page = HomePage(driver)\n            self.home_page.open_page()\n            self.home_page.click_first_hotel_bunner()\n    \n            self.hotels_page = HotelsPage(driver)\n            assert self.hotels_page.is_at_page()\n        finally:\n            self.home_page.take_screenshot()\n    \n        try:\n            self.number_of_hotels_on_page = len(self.hotels_page.get_hotels_on_page())\n            assert self.number_of_hotels_on_page > 0, \"There is no hotel on the page\"\n            assert len(\n                self.hotels_page.get_show_price_buttons()) >= self.number_of_hotels_on_page, \"The show price button isn't seen on every hotel\"\n    \n            self.hotels_page.click_on_hotel_by_index(0)\n            self.hotels_page.click_on_next_month_day()\n            self.hotels_page.click_on_search_btn()\n>           assert len(self.hotels_page.get_hotels_on_page()) == len(\n                self.hotels_page.get_hotels_with_price()), \"Some hotels are displayed without price\"\n\nProject\\tests\\test_class.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nProject\\pages\\HotelsPage.py:29: in get_hotels_on_page\n    self.wait_to_be_present(self.hotels_on_page)\nProject\\pages\\BasePage.py:23: in wait_to_be_present\n    self.wait.until(cond.presence_of_element_located((page_element.get_locator_type(), page_element.get_locator())))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"7febb90d-89f1-4eb8-a6dc-fb7a2d39cc3f\")>\nmethod = <selenium.webdriver.support.expected_conditions.presence_of_element_located object at 0x0000029F36F9CD60>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+    "steps" : [ {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1596549365561,
+        "stop" : 1596549366210,
+        "duration" : 649
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "49871852ff4f3f7a",
+        "name" : "screenshot",
+        "source" : "49871852ff4f3f7a.png",
+        "type" : "image/png",
+        "size" : 356470
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1596549383259,
+        "stop" : 1596549383484,
+        "duration" : 225
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a1de49a35d865ac5",
+        "name" : "screenshot",
+        "source" : "a1de49a35d865ac5.png",
+        "type" : "image/png",
+        "size" : 63438
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1596549383779,
+      "stop" : 1596549386667,
+      "duration" : 2888
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Check the hotels prices"
+  }, {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "21800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "capabilities",
+    "value" : "{'browserName': 'firefox'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "8b2070a837d5dc51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596457541561,
+        "stop" : 1596457566793,
+        "duration" : 25232
+      }
+    }, {
+      "uid" : "76fb8e0aca1ac1e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596457454024,
+        "stop" : 1596457488256,
+        "duration" : 34232
+      }
+    }, {
+      "uid" : "b7fea58a9336c33f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: permission denied\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'M-BOVA-PC', ip: '10.7.0.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'\nDriver info: driver.version: unknown\nremote stacktrace: \nStacktrace:\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)\n    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)\n    at java.lang.reflect.Constructor.newInstance (None:-1)\n    at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0 (W3CHandshakeResponse.java:62)\n    at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0 (HandshakeResponse.java:30)\n    at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0 (ProtocolHandshake.java:126)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:128)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:74)\n    at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake (RemoteSession.java:147)\n    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:161)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:180)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:183)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Collections$2.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:69)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.DistinctOps$1$2.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)\n    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:72)\n    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:65)\n    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:235)\n    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)\n    at java.util.concurrent.FutureTask.run (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)\n    at java.lang.Thread.run (None:-1)",
+      "time" : {
+        "start" : 1596456803497,
+        "stop" : 1596456803497,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "432c697d1d7e35a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596456734411,
+        "stop" : 1596456764119,
+        "duration" : 29708
+      }
+    }, {
+      "uid" : "1cca26fc30c7d16b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+      "time" : {
+        "start" : 1596456668749,
+        "stop" : 1596456668749,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3a076a713f9bee89",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+      "time" : {
+        "start" : 1596456513118,
+        "stop" : 1596456513118,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "48fd217a94bfaa59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596202225398,
+        "stop" : 1596202239021,
+        "duration" : 13623
+      }
+    }, {
+      "uid" : "17a916fe70a96139",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596195636189,
+        "stop" : 1596195644722,
+        "duration" : 8533
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "3502259194686f56",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/15/allure/#testresult/3502259194686f56",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596457541561,
+          "stop" : 1596457566793,
+          "duration" : 25232
+        }
+      }, {
+        "uid" : "ea59cbd5ead3be18",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/14/allure/#testresult/ea59cbd5ead3be18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596457454024,
+          "stop" : 1596457488256,
+          "duration" : 34232
+        }
+      }, {
+        "uid" : "7fa89b876f206677",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/13/allure/#testresult/7fa89b876f206677",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: permission denied\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'M-BOVA-PC', ip: '10.7.0.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'\nDriver info: driver.version: unknown\nremote stacktrace: \nStacktrace:\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)\n    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)\n    at java.lang.reflect.Constructor.newInstance (None:-1)\n    at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0 (W3CHandshakeResponse.java:62)\n    at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0 (HandshakeResponse.java:30)\n    at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0 (ProtocolHandshake.java:126)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:128)\n    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:74)\n    at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake (RemoteSession.java:147)\n    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:161)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:180)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:183)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.Collections$2.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:69)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.DistinctOps$1$2.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)\n    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)\n    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)\n    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)\n    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)\n    at java.util.stream.AbstractPipeline.copyInto (None:-1)\n    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)\n    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)\n    at java.util.stream.AbstractPipeline.evaluate (None:-1)\n    at java.util.stream.ReferencePipeline.findFirst (None:-1)\n    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:72)\n    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:65)\n    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:235)\n    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)\n    at java.util.concurrent.FutureTask.run (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)\n    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)\n    at java.lang.Thread.run (None:-1)",
+        "time" : {
+          "start" : 1596456803497,
+          "stop" : 1596456803497,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "dff0fc71aa4dcef7",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/12/allure/#testresult/dff0fc71aa4dcef7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596456734411,
+          "stop" : 1596456764119,
+          "duration" : 29708
+        }
+      }, {
+        "uid" : "8ef7bd54229b474d",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/11/allure/#testresult/8ef7bd54229b474d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+        "time" : {
+          "start" : 1596456668749,
+          "stop" : 1596456668749,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1fc3e7a4ef3d8a82",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/10/allure/#testresult/1fc3e7a4ef3d8a82",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: Requested environment is not available",
+        "time" : {
+          "start" : 1596456513118,
+          "stop" : 1596456513118,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "bc946134de3f029",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/9/allure/#testresult/bc946134de3f029",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596202225398,
+          "stop" : 1596202239021,
+          "duration" : 13623
+        }
+      }, {
+        "uid" : "8f0ea605f5edd677",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/8/allure/#testresult/8f0ea605f5edd677",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596195636189,
+          "stop" : 1596195644722,
+          "duration" : 8533
+        }
+      }, {
+        "uid" : "abf3624d761c2f5d",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/7/allure/#testresult/abf3624d761c2f5d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596195636189,
+          "stop" : 1596195644722,
+          "duration" : 8533
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "956beaef627272c2.json",
+  "parameterValues" : [ "{'browserName': 'firefox'}" ]
+}

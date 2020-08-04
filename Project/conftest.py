@@ -5,6 +5,8 @@ import urllib3
 import warnings
 from _pytest.runner import CallInfo
 from _pytest.terminal import TerminalReporter
+import sys
+
 
 
 #def pytest_addoption(parser):
@@ -22,8 +24,13 @@ from _pytest.terminal import TerminalReporter
 
 
 chromeCapabilities = {
-    "browserName":"chrome",
+    "browserName":"chrome"
 }
+#"version":"84.0",
+#"enableVNC": False,
+#"enableVideo": False,
+#"javascriptEnabled": True
+
 firefoxCapabilities = {
     "browserName":"firefox"
 }
@@ -43,12 +50,7 @@ def driver(request, capabilities):
     driver.quit()
 
 
+
 @pytest.fixture(scope="function")
-def driver_init_2(request):
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    driver = webdriver.Remote(command_executor='http://localhost:20500/wd/hub', desired_capabilities=firefoxCapabilities)
-    driver.implicitly_wait(5)
-    yield driver
-    driver.quit()
-
-
+def title_of_test():
+    pass

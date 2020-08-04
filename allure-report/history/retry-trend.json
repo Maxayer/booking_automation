@@ -1,0 +1,113 @@
+[ {
+  "buildOrder" : 16,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/16/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 80
+  }
+}, {
+  "buildOrder" : 15,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/15/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 70
+  }
+}, {
+  "buildOrder" : 14,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/14/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 60
+  }
+}, {
+  "buildOrder" : 13,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/13/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 50
+  }
+}, {
+  "buildOrder" : 12,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/12/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 40
+  }
+}, {
+  "buildOrder" : 11,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/11/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 30
+  }
+}, {
+  "buildOrder" : 10,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/10/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 20
+  }
+}, {
+  "buildOrder" : 9,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/9/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 10
+  }
+}, {
+  "buildOrder" : 8,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/8/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 7,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/7/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 10,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 6,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/6/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 5,
+    "retry" : 5
+  }
+}, {
+  "buildOrder" : 5,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/5/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 5,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 4,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/4/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 5,
+    "retry" : 5
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "http://localhost:8080/job/booking_automation/3/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 5,
+    "retry" : 5
+  }
+} ]

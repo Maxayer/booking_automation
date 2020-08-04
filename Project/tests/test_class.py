@@ -28,6 +28,9 @@ class TestClass:
     @allure.story("Check the hotels prices")
     @allure.severity("critical")
     def test_second(self, driver):
+        browser_name = driver.capabilities['browserName']
+        sys.stderr.write(f"The test is running by {browser_name} ")
+
         try:
             self.home_page = HomePage(driver)
             self.home_page.open_page()

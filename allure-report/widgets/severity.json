@@ -1,0 +1,101 @@
+[ {
+  "uid" : "42011a8daa2b224b",
+  "name" : "test_first[capabilities0-5]",
+  "time" : {
+    "start" : 1596549343098,
+    "stop" : 1596549382303,
+    "duration" : 39205
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "956beaef627272c2",
+  "name" : "test_second[capabilities1]",
+  "time" : {
+    "start" : 1596549348167,
+    "stop" : 1596549383484,
+    "duration" : 35317
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "d3fec87b931a00d6",
+  "name" : "test_first[capabilities0-2]",
+  "time" : {
+    "start" : 1596549343683,
+    "stop" : 1596549388683,
+    "duration" : 45000
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a20561b15f9321f8",
+  "name" : "test_second[capabilities0]",
+  "time" : {
+    "start" : 1596549343009,
+    "stop" : 1596549393259,
+    "duration" : 50250
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2ca795854890740d",
+  "name" : "test_first[capabilities0-3]",
+  "time" : {
+    "start" : 1596549343241,
+    "stop" : 1596549380174,
+    "duration" : 36933
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6a95ef45555d9178",
+  "name" : "test_first[capabilities1-2]",
+  "time" : {
+    "start" : 1596549362746,
+    "stop" : 1596549371865,
+    "duration" : 9119
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e716cccc748b0684",
+  "name" : "test_first[capabilities1-3]",
+  "time" : {
+    "start" : 1596549353269,
+    "stop" : 1596549368796,
+    "duration" : 15527
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9654de74a7f95eb9",
+  "name" : "test_first[capabilities0-4]",
+  "time" : {
+    "start" : 1596549343683,
+    "stop" : 1596549381946,
+    "duration" : 38263
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "73b18083166682a4",
+  "name" : "test_first[capabilities1-4]",
+  "time" : {
+    "start" : 1596549369653,
+    "stop" : 1596549378106,
+    "duration" : 8453
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "69da4fca7acb74dc",
+  "name" : "test_first[capabilities1-5]",
+  "time" : {
+    "start" : 1596549350886,
+    "stop" : 1596549370576,
+    "duration" : 19690
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

@@ -1,0 +1,337 @@
+{
+  "uid" : "9654de74a7f95eb9",
+  "name" : "test_first[capabilities0-4]",
+  "fullName" : "Project.tests.test_class.TestClass#test_first",
+  "historyId" : "ba3ea0f57446475992845ef200d18b08",
+  "time" : {
+    "start" : 1596549343683,
+    "stop" : 1596549381946,
+    "duration" : 38263
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "capabilities",
+    "time" : {
+      "start" : 1596549337866,
+      "stop" : 1596549337866,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "capsys",
+    "time" : {
+      "start" : 1596549343681,
+      "stop" : 1596549343681,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1596549337866,
+      "stop" : 1596549343681,
+      "duration" : 5815
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Take a screen",
+      "time" : {
+        "start" : 1596549379344,
+        "stop" : 1596549379944,
+        "duration" : 600
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1bbd41ec0f5cc7cd",
+        "name" : "screenshot",
+        "source" : "1bbd41ec0f5cc7cd.png",
+        "type" : "image/png",
+        "size" : 549537
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "capsys::0",
+    "time" : {
+      "start" : 1596549381947,
+      "stop" : 1596549381947,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1596549381948,
+      "stop" : 1596549385243,
+      "duration" : 3295
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "booking.com tests"
+  }, {
+    "name" : "story",
+    "value" : "Check the number of children"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Project.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_class"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "m-bova-pc"
+  }, {
+    "name" : "thread",
+    "value" : "21900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Project.tests.test_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "capabilities",
+    "value" : "{'browserName': 'chrome'}"
+  }, {
+    "name" : "number_of_children",
+    "value" : "4"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "71548f88a1fc7a90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596457536951,
+        "stop" : 1596457572057,
+        "duration" : 35106
+      }
+    }, {
+      "uid" : "dcb5270909ce9d70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596457450900,
+        "stop" : 1596457495361,
+        "duration" : 44461
+      }
+    }, {
+      "uid" : "703a40cd4d272c43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596456808749,
+        "stop" : 1596456837788,
+        "duration" : 29039
+      }
+    }, {
+      "uid" : "c0212c75a9c20c35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596456733885,
+        "stop" : 1596456766628,
+        "duration" : 32743
+      }
+    }, {
+      "uid" : "d4eeeaf480418586",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1596456673798,
+        "stop" : 1596456703401,
+        "duration" : 29603
+      }
+    }, {
+      "uid" : "1958c4acaf49f1ae",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1596456517374,
+        "stop" : 1596456544974,
+        "duration" : 27600
+      }
+    }, {
+      "uid" : "4f637ac8f86d21af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596202206536,
+        "stop" : 1596202242518,
+        "duration" : 35982
+      }
+    }, {
+      "uid" : "5810774c16982295",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596195568996,
+        "stop" : 1596195574909,
+        "duration" : 5913
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "c27cf2dcc6406380",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/15/allure/#testresult/c27cf2dcc6406380",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596457536951,
+          "stop" : 1596457572057,
+          "duration" : 35106
+        }
+      }, {
+        "uid" : "a9a04704f08658ea",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/14/allure/#testresult/a9a04704f08658ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596457450900,
+          "stop" : 1596457495361,
+          "duration" : 44461
+        }
+      }, {
+        "uid" : "cd88f2a7d04105cd",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/13/allure/#testresult/cd88f2a7d04105cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596456808749,
+          "stop" : 1596456837788,
+          "duration" : 29039
+        }
+      }, {
+        "uid" : "8c9b9b8bb3f25a0c",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/12/allure/#testresult/8c9b9b8bb3f25a0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596456733885,
+          "stop" : 1596456766628,
+          "duration" : 32743
+        }
+      }, {
+        "uid" : "28105a8e5df6c09d",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/11/allure/#testresult/28105a8e5df6c09d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1596456673798,
+          "stop" : 1596456703401,
+          "duration" : 29603
+        }
+      }, {
+        "uid" : "cb66a755531225f",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/10/allure/#testresult/cb66a755531225f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1596456517374,
+          "stop" : 1596456544974,
+          "duration" : 27600
+        }
+      }, {
+        "uid" : "d2a07a7fd73bb59f",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/9/allure/#testresult/d2a07a7fd73bb59f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596202206536,
+          "stop" : 1596202242518,
+          "duration" : 35982
+        }
+      }, {
+        "uid" : "ff5f560a8acad753",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/8/allure/#testresult/ff5f560a8acad753",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596195568996,
+          "stop" : 1596195574909,
+          "duration" : 5913
+        }
+      }, {
+        "uid" : "6100ba7174037db3",
+        "reportUrl" : "http://localhost:8080/job/booking_automation/7/allure/#testresult/6100ba7174037db3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596195568996,
+          "stop" : 1596195574909,
+          "duration" : 5913
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9654de74a7f95eb9.json",
+  "parameterValues" : [ "{'browserName': 'chrome'}", "4" ]
+}
