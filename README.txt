@@ -1,3 +1,5 @@
+https://travis-ci.org/Maxayer/booking_automation.svg?branch=master
+
 the project allows to commit tests on three browsers: chrome, firefox and opera
 
 launch the tests from the root directory, for example:
